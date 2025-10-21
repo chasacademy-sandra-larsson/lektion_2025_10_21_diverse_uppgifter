@@ -9,3 +9,14 @@ const colors = [
   ];
 
 
+const ul = document.getElementById("myList");
+
+let html = "";
+
+colors.forEach(function(item) {
+    html += `<li>${item}</li>`
+})
+
+console.log(html);
+
+ul.innerHTML = html;
